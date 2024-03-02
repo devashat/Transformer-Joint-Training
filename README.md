@@ -34,7 +34,7 @@ pip install -r requirements.txt
 python3 main.py --train --data "train.csv" --save_model "./trained_model.pt"
 ```
 
-### Test
+### Testing
 
 ```
 python3 main.py --test --data "test.csv" --model_path "./trained_model.pt" --output "./predictions.csv"
