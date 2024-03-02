@@ -12,7 +12,7 @@ This project requires training a Transformer model to perform two tasks simultan
 
 ## Setup
 
-***I did add os.system commands for these, but keeping this here just in case.***
+***I did add os.system commands for the first three commands, but keeping this here just in case.***
 
 To run this code, make sure to do the following first in cli:
 
@@ -26,4 +26,17 @@ unzip 6.zip -d wikipedia
 pip install -r requirements.txt
 ```
 
+## Sample Run Command
+
+### Training
+
+```
+python3 main.py --train --data "train.csv" --save_model "./trained_model.pt"
+```
+
+### Test
+
+```
+python3 main.py --test --data "test.csv" --model_path "./trained_model.pt" --output "./predictions.csv"
+```
 
